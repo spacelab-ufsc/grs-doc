@@ -1,0 +1,25 @@
+name: Documentation build
+
+on:
+  push:
+    branches: [dev, main]
+  pull_request:
+    branches: [dev, main]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    # Standard drop-in approach that should work for most people.
+    - uses: ammaraskar/sphinx-action@master
+      with:
+        docs-folder: "."
+        pre-build-command: "pip install --upgrade pip"
+    # Create an artifact of the html output.
+    - uses: actions/upload-artifact@v4
+      with:
+        name: documentation_html
+        path: _build/html/
