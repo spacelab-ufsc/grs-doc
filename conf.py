@@ -14,12 +14,15 @@ release = 'v0.1'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = []
+numfig = True
+
+extensions = ['sphinxcontrib.bibtex']
+
+# Path to your .bib file
+bibtex_bibfiles = ['references.bib']
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
-
-
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
