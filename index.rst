@@ -16,3 +16,4 @@ Overview
    overview
    hardware
    software
+   references
