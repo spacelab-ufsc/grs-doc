@@ -13,10 +13,10 @@
         <img alt="GitHub commits since latest release (by date)" src="https://img.shields.io/github/commits-since/spacelab-ufsc/grs-doc/latest?style=for-the-badge">
     </a>
     <a href="https://github.com/spacelab-ufsc/grs-doc/blob/main/LICENSE">
-        <img src="https://img.shields.io/badge/license-CC-BY-SA-4.0-yellow?style=for-the-badge">
+        <img src="https://img.shields.io/github/license/spacelab-ufsc/grs-doc?style=for-the-badge">
     </a>
     <a href="https://github.com/spacelab-ufsc/grs-doc/actions">
-        <img src="https://img.shields.io/github/workflow/status/spacelab-ufsc/grs-doc/Build%20Sphinx%20page?style=for-the-badge">
+        <img src="https://img.shields.io/github/actions/workflow/status/spacelab-ufsc/grs-doc/sphinx_build.yml?style=for-the-badge">
     </a>
 </p>
 
