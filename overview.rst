@@ -11,7 +11,7 @@ The UFSC ground station is currently being developed and prepared for current on
       :align: center
       :alt: Block diagram
 
-      Fig. General block diagram.
+      General block diagram.
 
 The system is built to ensure robust signal transmission and reception, with integrated components for amplification, protection, and control.
 
@@ -22,3 +22,67 @@ For signal processing, the ground station employs an Software Defined Radio (SDR
 The rotator controller manages the antenna positioning, ensuring accurate alignment with satellites. A network switch connects all components to a central server, facilitating data processing, storage, and remote operation. Power supplies and a no-break system provide uninterrupted power, critical for maintaining continuous operation. Additionally, a surveillance camera is included for monitoring the movement of the antennas remotelly.
 
 Overall, this ground station is a versatile and resilient system, capable of supporting a wide range of satellite communication tasks with high reliability and flexibility.
+
+Equipment
+=========
+
+A list with the main equipment of the station is available in :numref:`tab:equipment`.
+
+.. _tab:equipment:
+
+.. list-table:: List of equipment.
+   :name: Equipment
+   :header-rows: 1
+   :widths: 30 15 15
+
+   * - **Device**
+     - **Brand**
+     - **Model**
+   * - Server
+     - Dell
+     - TBC
+   * - Rotor
+     - MFJ
+     - RAS-2 SF 38
+   * - VHF Antenna
+     - M²
+     - 2MCP14
+   * - UHF Antenna
+     - TBD
+     - TBD
+   * - S-Band Antenna
+     - TBD
+     - TBD
+   * - Surge Protector
+     - MFJ
+     - MFJ-270N
+   * - RF Switch
+     - TBC
+     - TBC
+   * - PA (VHF)
+     - Mini-Circuits
+     - ZHL-50W-52-S+
+   * - PA (UHF)
+     - Mini-Circuits
+     - ZHL-50W-52-S+
+   * - PA (S-Band)
+     - TBD
+     - TBD
+   * - LNA (VHF)
+     - TBD
+     - TBD
+   * - LNA (UHF)
+     - TBD
+     - TBD
+   * - LNA (S-Band)
+     - TBD
+     - TBD
+   * - SDR
+     - Ettus
+     - USRP N210
+   * - Rotator Controller
+     - TBF
+     - TBF
+   * - Surveillance Camera
+     - Intelbras
+     - TBC

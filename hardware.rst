@@ -14,41 +14,52 @@ There are two antennas in the ground station: One for VHF and one for the UHF ba
 .. list-table:: Main characteristics of the ground segment antennas.
    :name: Antennas
    :header-rows: 1
-   :widths: 30 15 15
+   :widths: 30 15 15 15
 
    * - **Characteristic**
      - **VHF Antenna**
      - **UHF Antenna**
+     - **S-Band Antenna**
    * - Brand
      - M²
      - Cushcraft
+     - TBD
    * - Model
      - 2MCP14
      - A719B
+     - TBD
    * - Type
      - Yagi
      - Yagi
+     - TBD
    * - Number of elements
      - 14
      - 19
+     - TBD
    * - Frequency range
      - 143-148 MHz
      - 430-450 MHz
+     - TBD
    * - Gain
      - 12.34 dBi
      - 15.5 dBi
+     - TBD
    * - Power rating
      - 1500 W
      - 2000 W
+     - TBD
    * - Boom length
      - 3.2 m
      - 4.1 m
+     - TBD
    * - Longest element
      - 1.02 m
      - 0.34 m
+     - TBD
    * - Weight
      - 2.72 kg
      - 2.55 kg
+     - TBD
 
 More information about the VHF and UHF antennas can be found in :cite:`2mcp14` and :cite:`a719b` respectively.
 
@@ -66,7 +77,7 @@ For this project the model MFJ-270N will be used, and a picture of it can be see
       :align: center
       :alt: Surge protector.
 
-      Fig. MFJ-270N surge protector.
+      MFJ-270N surge protector.
 
 Rotator
 =======
