@@ -75,13 +75,18 @@
              
   <section id="overview">
 <h1>Overview<a class="headerlink" href="#overview" title="Permalink to this heading"></a></h1>
-<p>The UFSC ground station is currently being developed and prepared for current ongoing missions of the group. A general block diagram can be seen below.</p>
+<p>The UFSC ground station is currently being developed and prepared for current ongoing missions of the group. A general block diagram can be seen in <a class="reference internal" href="#fig-grs-block-diagram"><span class="std std-numref">Fig. 1</span></a>.</p>
 <figure class="align-center" id="id1">
 <span id="fig-grs-block-diagram"></span><a class="reference internal image-reference" href="_images/block-diagram.png"><img alt="Block diagram" src="_images/block-diagram.png" style="width: 100%;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 1 </span><span class="caption-text">Fig. General block diagram.</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
+<p>The system is built to ensure robust signal transmission and reception, with integrated components for amplification, protection, and control.</p>
+<p>At the core of the setup are three antenna systems, each dedicated to a specific frequency band: VHF, UHF, and S-Band. These antennas are mounted on an azimuth/elevation rotor, allowing precise directional control to track satellites as they move across the sky. Each antenna is connected to a surge protector to safeguard the equipment from voltage spikes, followed by an RF switch that enables seamless switching between transmission and reception modes.</p>
+<p>For signal processing, the ground station employs an Software Defined Radio (SDR) for each frequency band. The received signals are amplified by Low-Noise Amplifiers (LNAs) to enhance sensitivity, while Power Amplifiers (PAs) boost outgoing signals for transmission. This dual amplification ensures efficient communication in both directions.</p>
+<p>The rotator controller manages the antenna positioning, ensuring accurate alignment with satellites. A network switch connects all components to a central server, facilitating data processing, storage, and remote operation. Power supplies and a no-break system provide uninterrupted power, critical for maintaining continuous operation. Additionally, a surveillance camera is included for monitoring the movement of the antennas remotelly.</p>
+<p>Overall, this ground station is a versatile and resilient system, capable of supporting a wide range of satellite communication tasks with high reliability and flexibility.</p>
 </section>
 
 
