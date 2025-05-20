@@ -172,17 +172,53 @@ A picture of the power amplifier can be seen in :numref:`fig:zhl-50w`, and the m
    * - Max. supply current
      - 9.3 A
 
+More information about this PA can be found in :cite:`zhl-50w`.
+
 Power Amplifiers (S-Band)
 --------------------------
 
 .. note::
     TODO
 
-Low-Noise Amplifier
--------------------
+Low-Noise Amplifier (VHF/UHF)
+-----------------------------
 
-.. note::
-    TODO
+For the LNA of the VHF/UHF bands, the Mini-Circuits ZFL-500LN+ model is being used. It operates over a wide frequency range of 0.1 to 500 MHz, making it suitable for communications, test equipment, and signal boosting in weak-signal environments. A picture of this device is available in :numref:`fig:zfl-500ln`, the main specs can be seen in :numref:`tab:zfl-500ln-specs`.
+
+.. _fig:zfl-500ln:
+
+.. figure:: img/zfl-500ln.png
+   :width: 30%
+   :align: center
+
+   Mini-Circuits ZFL-500LN+ LNA.
+
+.. _tab:zfl-500ln-specs:
+
+.. list-table:: Main characteristics of the ZFL-500LN+ LNA.
+   :widths: 40 30
+   :header-rows: 1
+
+   * - **Characteristic**
+     - **Value**
+   * - Brand
+     - Mini-Circuits
+   * - Model
+     - ZFL-500LN+
+   * - Frequency range
+     - 0.1 to 500 MHz
+   * - Noise figure
+     - 2.9 dB
+   * - Gain
+     - 24 dB (Min.)
+   * - Maximum output power
+     - 5 dBm
+   * - Input voltage
+     - 15 V
+   * - Current consumption
+     - 15 mA (Nominal)
+
+More information about this LNA can be found in :cite:`zfl-500ln`.
 
 Software Defined Radio
 ----------------------
