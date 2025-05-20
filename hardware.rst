@@ -82,17 +82,17 @@ For this project the model MFJ-270N will be used, and a picture of it can be see
 Rotator
 =======
 
-Both antennas (VHF and UHF) track the satellite through a two-axis rotator (azimuth and elevation). The used model is the Yaesu G-5500, which provides 450\ :sup:`°` azimuth and 180\ :sup:`°` elevation control of medium and large-size unidirectional satellite antenna arrays under remote control from the station operation position.
+All antennas track the satellite through a two-axis rotator (azimuth and elevation). The used model is the Hy-Gain RAS-2, which is a heavy-duty antenna rotator designed for medium to large HF and VHF/UHF antennas. It features a robust construction with a 1,000 lb (454 kg) thrust bearing and 200 lb (91 kg) continuous wind load rating, making it suitable for demanding installations. The rotator uses a dual-drum cable system for precise 360-degree rotation and includes automatic braking to prevent unwanted movement.
 
-A picture of the G-5500 rotator (and controller) can be seen in :numref:`fig:g5500`, and the main characteristics can be found in :numref:`tab:grs-rotor`.
+A picture of this rotator can be seen in :numref:`fig:ras-2`, and the main characteristics can be found in :numref:`tab:grs-rotor`.
 
-.. _fig:g5500:
+.. _fig:ras-2:
 
-.. figure:: img/g5500.jpg
+.. figure:: img/ras-2.jpg
    :width: 60%
    :align: center
 
-   Yaesu G-5500 rotator and controller.
+   Hy-Gain RAS-2 rotator and controller.
 
 .. _tab:grs-rotor:
 
@@ -103,37 +103,35 @@ A picture of the G-5500 rotator (and controller) can be seen in :numref:`fig:g55
    * - **Characteristic**
      - **Value**
    * - Brand
-     - Yaesu
+     - Hy-Gain
    * - Model
-     - G-5500
+     - RAS-2
    * - Voltage requirement
-     - 110-120 or 200-240 V\ :sub:`AC`
+     - 12-24 V\ :sub:`DC`
+   * - Current consumption
+     - 3-5 A
    * - Motor voltage
-     - 24 V\ :sub:`AC`
+     - 13.8-24 V\ :sub:`DC`
    * - Rotation time (elevation, 180\ :sup:`°`)
-     - 67 sec
+     - 80 sec (12 V), 40 sec (24 V)
    * - Rotation time (azimuth, 360\ :sup:`°`)
-     - 58 sec
-   * - Maximum continuous operation
-     - 5 min
+     - 120 sec (12 V), 60 sec (24 V)
    * - Rotation torque (elevation)
-     - 14 kg·m
+     - 58 kg·m
    * - Rotation torque (azimuth)
-     - 6 kg·m
+     - 58 kg·m
    * - Braking torque (elevation and azimuth)
-     - 40 kg·m
+     - 276 kg·m
    * - Vertical load
-     - 200 kg
+     - 318 kg
    * - Pointing accuracy
-     - ±4 %
+     - 1 degree
    * - Wind surface area
-     - 1 m\ :sup:`2`
-   * - Weight (rotator)
-     - 9 kg
-   * - Weight (controller)
-     - 3 kg
+     - 2.8 m\ :sup:`2`
+   * - Weight
+     - 20 kg
 
-More information about the ground station rotator can be found in :cite:`g5500`.
+More information about the ground station rotator can be found in :cite:`ras-2`.
 
 Amplifiers
 ==========
