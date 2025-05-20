@@ -14,41 +14,52 @@ There are two antennas in the ground station: One for VHF and one for the UHF ba
 .. list-table:: Main characteristics of the ground segment antennas.
    :name: Antennas
    :header-rows: 1
-   :widths: 30 15 15
+   :widths: 30 15 15 15
 
    * - **Characteristic**
      - **VHF Antenna**
      - **UHF Antenna**
+     - **S-Band Antenna**
    * - Brand
      - M²
      - Cushcraft
+     - TBD
    * - Model
      - 2MCP14
      - A719B
+     - TBD
    * - Type
      - Yagi
      - Yagi
+     - TBD
    * - Number of elements
      - 14
      - 19
+     - TBD
    * - Frequency range
      - 143-148 MHz
      - 430-450 MHz
+     - TBD
    * - Gain
      - 12.34 dBi
      - 15.5 dBi
+     - TBD
    * - Power rating
      - 1500 W
      - 2000 W
+     - TBD
    * - Boom length
      - 3.2 m
      - 4.1 m
+     - TBD
    * - Longest element
      - 1.02 m
      - 0.34 m
+     - TBD
    * - Weight
      - 2.72 kg
      - 2.55 kg
+     - TBD
 
 More information about the VHF and UHF antennas can be found in :cite:`2mcp14` and :cite:`a719b` respectively.
 
@@ -66,22 +77,22 @@ For this project the model MFJ-270N will be used, and a picture of it can be see
       :align: center
       :alt: Surge protector.
 
-      Fig. MFJ-270N surge protector.
+      MFJ-270N surge protector.
 
 Rotator
 =======
 
-Both antennas (VHF and UHF) track the satellite through a two-axis rotator (azimuth and elevation). The used model is the Yaesu G-5500, which provides 450\ :sup:`°` azimuth and 180\ :sup:`°` elevation control of medium and large-size unidirectional satellite antenna arrays under remote control from the station operation position.
+All antennas track the satellite through a two-axis rotator (azimuth and elevation). The used model is the Hy-Gain RAS-2, which is a heavy-duty antenna rotator designed for medium to large HF and VHF/UHF antennas. It features a robust construction with a 1,000 lb (454 kg) thrust bearing and 200 lb (91 kg) continuous wind load rating, making it suitable for demanding installations. The rotator uses a dual-drum cable system for precise 360-degree rotation and includes automatic braking to prevent unwanted movement.
 
-A picture of the G-5500 rotator (and controller) can be seen in :numref:`fig:g5500`, and the main characteristics can be found in :numref:`tab:grs-rotor`.
+A picture of this rotator can be seen in :numref:`fig:ras-2`, and the main characteristics can be found in :numref:`tab:grs-rotor`.
 
-.. _fig:g5500:
+.. _fig:ras-2:
 
-.. figure:: img/g5500.jpg
+.. figure:: img/ras-2.jpg
    :width: 60%
    :align: center
 
-   Yaesu G-5500 rotator and controller.
+   Hy-Gain RAS-2 rotator and controller.
 
 .. _tab:grs-rotor:
 
@@ -92,37 +103,35 @@ A picture of the G-5500 rotator (and controller) can be seen in :numref:`fig:g55
    * - **Characteristic**
      - **Value**
    * - Brand
-     - Yaesu
+     - Hy-Gain
    * - Model
-     - G-5500
+     - RAS-2
    * - Voltage requirement
-     - 110-120 or 200-240 V\ :sub:`AC`
+     - 12-24 V\ :sub:`DC`
+   * - Current consumption
+     - 3-5 A
    * - Motor voltage
-     - 24 V\ :sub:`AC`
+     - 13.8-24 V\ :sub:`DC`
    * - Rotation time (elevation, 180\ :sup:`°`)
-     - 67 sec
+     - 80 sec (12 V), 40 sec (24 V)
    * - Rotation time (azimuth, 360\ :sup:`°`)
-     - 58 sec
-   * - Maximum continuous operation
-     - 5 min
+     - 120 sec (12 V), 60 sec (24 V)
    * - Rotation torque (elevation)
-     - 14 kg·m
+     - 58 kg·m
    * - Rotation torque (azimuth)
-     - 6 kg·m
+     - 58 kg·m
    * - Braking torque (elevation and azimuth)
-     - 40 kg·m
+     - 276 kg·m
    * - Vertical load
-     - 200 kg
+     - 318 kg
    * - Pointing accuracy
-     - ±4 %
+     - 1 degree
    * - Wind surface area
-     - 1 m\ :sup:`2`
-   * - Weight (rotator)
-     - 9 kg
-   * - Weight (controller)
-     - 3 kg
+     - 2.8 m\ :sup:`2`
+   * - Weight
+     - 20 kg
 
-More information about the ground station rotator can be found in :cite:`g5500`.
+More information about the ground station rotator can be found in :cite:`ras-2`.
 
 Amplifiers
 ==========
@@ -163,17 +172,53 @@ A picture of the power amplifier can be seen in :numref:`fig:zhl-50w`, and the m
    * - Max. supply current
      - 9.3 A
 
+More information about this PA can be found in :cite:`zhl-50w`.
+
 Power Amplifiers (S-Band)
 --------------------------
 
 .. note::
     TODO
 
-Low-Noise Amplifier
--------------------
+Low-Noise Amplifier (VHF/UHF)
+-----------------------------
 
-.. note::
-    TODO
+For the LNA of the VHF/UHF bands, the Mini-Circuits ZFL-500LN+ model is being used. It operates over a wide frequency range of 0.1 to 500 MHz, making it suitable for communications, test equipment, and signal boosting in weak-signal environments. A picture of this device is available in :numref:`fig:zfl-500ln`, the main specs can be seen in :numref:`tab:zfl-500ln-specs`.
+
+.. _fig:zfl-500ln:
+
+.. figure:: img/zfl-500ln.png
+   :width: 30%
+   :align: center
+
+   Mini-Circuits ZFL-500LN+ LNA.
+
+.. _tab:zfl-500ln-specs:
+
+.. list-table:: Main characteristics of the ZFL-500LN+ LNA.
+   :widths: 40 30
+   :header-rows: 1
+
+   * - **Characteristic**
+     - **Value**
+   * - Brand
+     - Mini-Circuits
+   * - Model
+     - ZFL-500LN+
+   * - Frequency range
+     - 0.1 to 500 MHz
+   * - Noise figure
+     - 2.9 dB
+   * - Gain
+     - 24 dB (Min.)
+   * - Maximum output power
+     - 5 dBm
+   * - Input voltage
+     - 15 V
+   * - Current consumption
+     - 15 mA (Nominal)
+
+More information about this LNA can be found in :cite:`zfl-500ln`.
 
 Software Defined Radio
 ----------------------
