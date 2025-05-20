@@ -69,11 +69,11 @@ A list with the main equipment of the station is available in :numref:`tab:equip
      - TBD
      - TBD
    * - LNA (VHF)
-     - TBD
-     - TBD
+     - Mini-Circuits
+     - ZHL-50W-52-S+
    * - LNA (UHF)
-     - TBD
-     - TBD
+     - Mini-Circuits
+     - ZHL-50W-52-S+
    * - LNA (S-Band)
      - TBD
      - TBD
@@ -81,8 +81,8 @@ A list with the main equipment of the station is available in :numref:`tab:equip
      - Ettus
      - USRP N210
    * - Rotator Controller
-     - TBF
-     - TBF
+     - AlfaSpid
+     - Rot2Prog
    * - Surveillance Camera
      - Intelbras
      - TBC
