@@ -1,4 +1,6 @@
 <h1 align="center">
+    <a href="https://spacelab-ufsc.github.io/grs-doc/"><img src="https://github.com/spacelab-ufsc/grs-doc/blob/main/img/logo-wide.png" alt="GOLDS-UFSC" width="30%"></a>
+    <br>
     SPACELAB'S GROUND STATION
     <br>
 </h1>

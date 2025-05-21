@@ -3,9 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-=========================
-SpaceLab's Ground Station
-=========================
+.. figure:: img/logo-wide.png
+   :width: 60%
+   :align: left
 
 This documentation provides a comprehensive overview of the UFSC ground station developed by SpaceLab, detailing its architecture, components, and operational capabilities. Designed to support ongoing satellite missions, the ground station features a robust and flexible system for reliable signal transmission and reception across multiple frequency bands. It's key features are:
 
