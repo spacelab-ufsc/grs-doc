@@ -70,10 +70,10 @@ A list with the main equipment of the station is available in :numref:`tab:equip
      - TBD
    * - LNA (VHF)
      - Mini-Circuits
-     - ZHL-50W-52-S+
+     - ZFL-500LN+
    * - LNA (UHF)
      - Mini-Circuits
-     - ZHL-50W-52-S+
+     - ZFL-500LN+
    * - LNA (S-Band)
      - TBD
      - TBD
