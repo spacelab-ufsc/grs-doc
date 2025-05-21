@@ -1,5 +1,5 @@
 <h1 align="center">
-    <a href="https://spacelab-ufsc.github.io/grs-doc/"><img src="https://github.com/spacelab-ufsc/grs-doc/blob/main/img/logo-wide.png" alt="GOLDS-UFSC" width="30%"></a>
+    <a href="https://spacelab-ufsc.github.io/grs-doc/"><img src="https://github.com/spacelab-ufsc/grs-doc/blob/main/img/logo-wide.png" alt="SpaceLab-GRS" width="30%"></a>
     <br>
     SPACELAB'S GROUND STATION
     <br>
@@ -29,7 +29,27 @@
 
 ## Overview
 
-> TODO
+This documentation provides a comprehensive overview of the UFSC ground station developed by SpaceLab, detailing its architecture, components, and operational capabilities. Designed to support ongoing satellite missions, the ground station features a robust and flexible system for reliable signal transmission and reception across multiple frequency bands. It's key features are:
+
+* **Multi-band antenna systems** (VHF, UHF, S-Band) mounted on an azimuth/elevation rotor for precise satellite tracking.
+* **Integrated protection and amplification** with surge protectors, LNAs, and PAs to ensure signal integrity.
+* **Software Defined Radios (SDRs)** for versatile signal processing.
+* **Remote operation and monitoring** via a central server.
+
+## Dependencies
+
+The following dependencies are required for building this project:
+
+* [sphinx-rtd-theme](https://pypi.org/project/sphinx-rtd-theme/)
+* [sphinxcontrib-bibtex](https://pypi.org/project/sphinxcontrib-bibtex/)
+
+## Building
+
+After installing the required dependencies, just execute the following command:
+
+```
+make html
+```
 
 ## License
 
