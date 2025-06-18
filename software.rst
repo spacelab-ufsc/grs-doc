@@ -2,6 +2,16 @@
 Software
 ********
 
+Software Architecture
+=====================
+.. _fig:software-diagram:
+
+.. figure:: img/grs.drawio.png
+   :width: 100%
+   :align: center
+
+   Ground station software diagram.
+
 Satellite Tracking
 ==================
 
