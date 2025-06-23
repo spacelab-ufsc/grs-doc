@@ -2,6 +2,50 @@
 Software
 ********
 
+Software Architecture
+=====================
+.. _fig:software-diagram:
+
+.. figure:: img/block-diagram-software.png
+   :width: 100%
+   :align: center
+
+   Ground station software diagram.
+
+Station Server
+--------------
+
+- **Rotor Manager**: TODO.
+- **FFT**: TODO.
+- **IQ Receiver**: TODO.
+- **Demodulators**: TODO.
+- **Sync. Word Detectors**: TODO.
+- **Frequency Synth.**: TODO.
+- **Modulators**: TODO.
+- **RF Front-End Controller**: TODO.
+
+Control Server
+--------------
+
+- **Dashboard Backend**: Grafana.
+- **Database**: TODO.
+- **Data Link Layer Decoders**: TODO.
+- **Network Layer Decoders**: TODO.
+- **Satellite Data Decoders**: TODO.
+- **Station Manager**: TODO.
+- **Data Link Layer Encoder**: TODO.
+- **Network Layer Encoder**: TODO.
+- **Satellite TC Scheduler**: TODO.
+
+Control Desktop
+---------------
+
+- **Dashboard**: TODO.
+- **Satellite Tracker**: GPredict.
+- **GRS Manager**: TODO.
+- **Spectrum Monitor**: TODO.
+- **Satellite TC Generator**: TODO.
+
 Satellite Tracking
 ==================
 
