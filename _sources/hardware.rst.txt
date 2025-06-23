@@ -7,61 +7,72 @@ This section describes the hardware side of the UFSC ground station and details 
 Antennas
 ========
 
-There are two antennas in the ground station: One for VHF and one for the UHF band. The main characteristics of these antennas can be seen in :numref:`tab:antennas`.
+There are four antennas in the ground station: One for VHF, two for the UHF band, and one for the S-Band. The main characteristics of these antennas can be seen in :numref:`tab:antennas`.
 
 .. _tab:antennas:
 
 .. list-table:: Main characteristics of the ground segment antennas.
    :name: Antennas
    :header-rows: 1
-   :widths: 30 15 15 15
+   :widths: 15 15 15 15 15
 
    * - **Characteristic**
      - **VHF Antenna**
      - **UHF Antenna**
+     - **UHF Antenna**
      - **S-Band Antenna**
    * - Brand
      - M²
-     - Cushcraft
+     - M²
+     - M²
      - TBD
    * - Model
      - 2MCP14
-     - A719B
+     - 403CP20
+     - 466CP42
      - TBD
    * - Type
+     - Yagi
      - Yagi
      - Yagi
      - TBD
    * - Number of elements
      - 14
-     - 19
+     - 10
+     - 20
      - TBD
    * - Frequency range
      - 143-148 MHz
-     - 430-450 MHz
+     - 398-408 MHz
+     - 462-470 MHz
      - TBD
    * - Gain
      - 12.34 dBi
-     - 15.5 dBi
+     - 14 dBi
+     - 19 dBi
      - TBD
    * - Power rating
      - 1500 W
-     - 2000 W
+     - 1500 W
+     - 600 W
      - TBD
    * - Boom length
      - 3.2 m
-     - 4.1 m
+     - 1.95 m
+     - 5.54 m
      - TBD
    * - Longest element
      - 1.02 m
-     - 0.34 m
+     - 0.381 m
+     - 0.297 m
      - TBD
    * - Weight
      - 2.72 kg
-     - 2.55 kg
+     - 2.72 kg
+     - 5.90 kg
      - TBD
 
-More information about the VHF and UHF antennas can be found in :cite:`2mcp14` and :cite:`a719b` respectively.
+More information about the VHF and UHF antennas can be found in :cite:`2mcp14`, :cite:`403CP20` and :cite:`466CP42` respectively.
 
 Surge Protector
 ---------------

@@ -46,6 +46,12 @@
 <li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hardware.html">Hardware</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Software</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#software-architecture">Software Architecture</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#station-server">Station Server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#control-server">Control Server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#control-desktop">Control Desktop</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#satellite-tracking">Satellite Tracking</a></li>
 </ul>
 </li>
@@ -79,13 +85,59 @@
              
   <section id="software">
 <h1>Software<a class="headerlink" href="#software" title="Permalink to this heading"></a></h1>
+<section id="software-architecture">
+<h2>Software Architecture<a class="headerlink" href="#software-architecture" title="Permalink to this heading"></a></h2>
+<figure class="align-center" id="id2">
+<span id="fig-software-diagram"></span><a class="reference internal image-reference" href="_images/block-diagram-software.png"><img alt="_images/block-diagram-software.png" src="_images/block-diagram-software.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Ground station software diagram.</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<section id="station-server">
+<h3>Station Server<a class="headerlink" href="#station-server" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Rotor Manager</strong>: TODO.</p></li>
+<li><p><strong>FFT</strong>: TODO.</p></li>
+<li><p><strong>IQ Receiver</strong>: TODO.</p></li>
+<li><p><strong>Demodulators</strong>: TODO.</p></li>
+<li><p><strong>Sync. Word Detectors</strong>: TODO.</p></li>
+<li><p><strong>Frequency Synth.</strong>: TODO.</p></li>
+<li><p><strong>Modulators</strong>: TODO.</p></li>
+<li><p><strong>RF Front-End Controller</strong>: TODO.</p></li>
+</ul>
+</section>
+<section id="control-server">
+<h3>Control Server<a class="headerlink" href="#control-server" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Dashboard Backend</strong>: Grafana.</p></li>
+<li><p><strong>Database</strong>: TODO.</p></li>
+<li><p><strong>Data Link Layer Decoders</strong>: TODO.</p></li>
+<li><p><strong>Network Layer Decoders</strong>: TODO.</p></li>
+<li><p><strong>Satellite Data Decoders</strong>: TODO.</p></li>
+<li><p><strong>Station Manager</strong>: TODO.</p></li>
+<li><p><strong>Data Link Layer Encoder</strong>: TODO.</p></li>
+<li><p><strong>Network Layer Encoder</strong>: TODO.</p></li>
+<li><p><strong>Satellite TC Scheduler</strong>: TODO.</p></li>
+</ul>
+</section>
+<section id="control-desktop">
+<h3>Control Desktop<a class="headerlink" href="#control-desktop" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Dashboard</strong>: TODO.</p></li>
+<li><p><strong>Satellite Tracker</strong>: GPredict.</p></li>
+<li><p><strong>GRS Manager</strong>: TODO.</p></li>
+<li><p><strong>Spectrum Monitor</strong>: TODO.</p></li>
+<li><p><strong>Satellite TC Generator</strong>: TODO.</p></li>
+</ul>
+</section>
+</section>
 <section id="satellite-tracking">
 <h2>Satellite Tracking<a class="headerlink" href="#satellite-tracking" title="Permalink to this heading"></a></h2>
-<p>To track the satellite and for orbit prediction, the GPredict software <span id="id1">[<a class="reference internal" href="references.html#id8" title="Alexandru Csete. Gpredict. 2021. Available at &lt;http://gpredict.oz9aec.net/&gt;.">Cse21</a>]</span> will be used. Gpredict is a real-time satellite tracking and orbit prediction application. It can track a large number of satellites and display their position and other data in lists, tables, maps, and polar plots (radar view). Gpredict can also predict the time of future passes for a satellite, and provide you with detailed information about each pass. Gpredict is free software licensed under the GNU General Public License. A picture of the main window of GPredict can be seen in <a class="reference internal" href="#fig-gpredict"><span class="std std-numref">Fig. 7</span></a>.</p>
-<figure class="align-center" id="id2">
+<p>To track the satellite and for orbit prediction, the GPredict software <span id="id1">[<a class="reference internal" href="references.html#id9" title="Alexandru Csete. Gpredict. 2021. Available at &lt;http://gpredict.oz9aec.net/&gt;.">Cse21</a>]</span> will be used. Gpredict is a real-time satellite tracking and orbit prediction application. It can track a large number of satellites and display their position and other data in lists, tables, maps, and polar plots (radar view). Gpredict can also predict the time of future passes for a satellite, and provide you with detailed information about each pass. Gpredict is free software licensed under the GNU General Public License. A picture of the main window of GPredict can be seen in <a class="reference internal" href="#fig-gpredict"><span class="std std-numref">Fig. 8</span></a>.</p>
+<figure class="align-center" id="id3">
 <span id="fig-gpredict"></span><a class="reference internal image-reference" href="_images/gpredict.png"><img alt="_images/gpredict.png" src="_images/gpredict.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Main window of GPredict.</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Fig. 8 </span><span class="caption-text">Main window of GPredict.</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
