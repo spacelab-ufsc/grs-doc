@@ -29,3 +29,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
+
+# Navigation bar title
+html_title = "SpaceLab Ground Station"
+html_short_title = "SpaceLab Ground Station"
