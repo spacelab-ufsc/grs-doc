@@ -16,12 +16,12 @@ Station Server
 --------------
 
 - **Rotor Manager**: TODO.
-- **FFT**: TODO.
-- **IQ Receiver**: TODO.
-- **Demodulators**: TODO.
-- **Sync. Word Detectors**: TODO.
+- **FFT**: `https://github.com/spacelab-ufsc/grs-fft <https://github.com/spacelab-ufsc/grs-fft>`__
+- **IQ Receiver**: `https://github.com/spacelab-ufsc/grs-iq-rx <https://github.com/spacelab-ufsc/grs-iq-rx>`__
+- **Demodulator**: `https://github.com/spacelab-ufsc/grs-demodulator <https://github.com/spacelab-ufsc/grs-demodulator>`__
+- **Sync. Word Detector**: TODO.
 - **Frequency Synth.**: TODO.
-- **Modulators**: TODO.
+- **Modulator**: `https://github.com/spacelab-ufsc/grs-modulator <https://github.com/spacelab-ufsc/grs-modulator>`__
 - **RF Front-End Controller**: TODO.
 
 Control Server
