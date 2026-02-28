@@ -28,7 +28,7 @@ Control Server
 --------------
 
 - **Dashboard Backend**: Grafana.
-- **Database**: TODO.
+- **Database**: :doc:`database`
 - **Data Link Layer Decoders**: TODO.
 - **Network Layer Decoders**: TODO.
 - **Satellite Data Decoders**: TODO.
@@ -43,8 +43,8 @@ Control Desktop
 - **Dashboard**: TODO.
 - **Satellite Tracker**: GPredict.
 - **GRS Manager**: TODO.
-- **Spectrum Monitor**: TODO.
-- **Satellite TC Generator**: TODO.
+- **Spectrum Monitor**: :doc:`spectrum-monitor`
+- **Satellite TC Generator**: :doc:`tc-generator`
 
 Satellite Tracking
 ==================
