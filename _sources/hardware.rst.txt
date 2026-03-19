@@ -231,6 +231,18 @@ For the LNA of the VHF/UHF bands, the Mini-Circuits ZFL-500LN+ model is being us
 
 More information about this LNA can be found in :cite:`zfl-500ln`.
 
+RF Controller
+-------------
+
+.. figure:: img/block-diagram-rf-front-end-controller.png
+   :width: 100%
+   :align: center
+
+   Block diagram of the RF front-end controller.
+
+.. note::
+    TODO
+
 Software Defined Radio
 ----------------------
 

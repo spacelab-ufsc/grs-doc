@@ -54,6 +54,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#power-amplifiers-vhf-uhf">Power Amplifiers (VHF/UHF)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#power-amplifiers-s-band">Power Amplifiers (S-Band)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#low-noise-amplifier-vhf-uhf">Low-Noise Amplifier (VHF/UHF)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rf-controller">RF Controller</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#software-defined-radio">Software Defined Radio</a></li>
 </ul>
 </li>
@@ -362,6 +363,19 @@
 </table>
 <p>More information about this LNA can be found in <span id="id7">[<a class="reference internal" href="references.html#id11" title="Coaxial Low Noise Amplifier ZFL-500LN+. Mini-Circuits, 2025. Available at &lt;https://www.minicircuits.com/pdfs/ZFL-500LN+.pdf&gt;.">Mini-Circuits25b</a>]</span>.</p>
 </section>
+<section id="rf-controller">
+<h3>RF Controller<a class="headerlink" href="#rf-controller" title="Permalink to this heading"></a></h3>
+<figure class="align-center" id="id16">
+<a class="reference internal image-reference" href="_images/block-diagram-rf-front-end-controller.png"><img alt="_images/block-diagram-rf-front-end-controller.png" src="_images/block-diagram-rf-front-end-controller.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Block diagram of the RF front-end controller.</span><a class="headerlink" href="#id16" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>TODO</p>
+</div>
+</section>
 <section id="software-defined-radio">
 <h3>Software Defined Radio<a class="headerlink" href="#software-defined-radio" title="Permalink to this heading"></a></h3>
 <p>As presented in <a class="reference internal" href="overview.html#fig-grs-block-diagram"><span class="std std-numref">Fig. 1</span></a>, the ground segment also has three SDR transceivers. The deployed model is the USRP N210 from Ettus Research <span id="id8">[<a class="reference internal" href="references.html#id8" title="N200/N210. Ettus Research, 11500 North Mopac Expressway, Austin, Tx 78759, USA. Available at &lt;https://kb.ettus.com/N200/N210&gt;.">Ettus Research</a>]</span>, a high-performance, networked software-defined radio platform. Unlike single-board designs with integrated RFICs (e.g., AD9361), the N210 features a modular architecture with:</p>
@@ -371,16 +385,16 @@
 <li><p><strong>Host connectivity</strong>: Gigabit Ethernet (1 GbE) for high-throughput streaming.</p></li>
 <li><p><strong>Synchronization</strong>: 10 MHz reference clock and PPS input for multi-unit coordination.</p></li>
 </ul>
-<p>The platform supports the USRP Hardware Driver (UHD), enabling seamless integration with GNURadio and other SDR frameworks. A picture of the USRP N210 SDR (with enclosure) can be seen in <a class="reference internal" href="#fig-usrp-n210"><span class="std std-numref">Fig. 6</span></a>.</p>
-<figure class="align-center" id="id16">
+<p>The platform supports the USRP Hardware Driver (UHD), enabling seamless integration with GNURadio and other SDR frameworks. A picture of the USRP N210 SDR (with enclosure) can be seen in <a class="reference internal" href="#fig-usrp-n210"><span class="std std-numref">Fig. 7</span></a>.</p>
+<figure class="align-center" id="id17">
 <span id="fig-usrp-n210"></span><a class="reference internal image-reference" href="_images/usrp-n210.jpg"><img alt="_images/usrp-n210.jpg" src="_images/usrp-n210.jpg" style="width: 60%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Ettus USRP N210 SDR.</span><a class="headerlink" href="#id16" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Ettus USRP N210 SDR.</span><a class="headerlink" href="#id17" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>The <a class="reference internal" href="#tab-n210-specs"><span class="std std-numref">Table 6</span></a> lists the key hardware specifications of the USRP N210 SDR.</p>
-<span id="tab-n210-specs"></span><table class="longtable docutils align-default" id="id17">
-<caption><span class="caption-number">Table 6 </span><span class="caption-text">USRP N210 Hardware Specifications</span><a class="headerlink" href="#id17" title="Permalink to this table"></a></caption>
+<span id="tab-n210-specs"></span><table class="longtable docutils align-default" id="id18">
+<caption><span class="caption-number">Table 6 </span><span class="caption-text">USRP N210 Hardware Specifications</span><a class="headerlink" href="#id18" title="Permalink to this table"></a></caption>
 <colgroup>
 <col style="width: 30.0%" />
 <col style="width: 70.0%" />
