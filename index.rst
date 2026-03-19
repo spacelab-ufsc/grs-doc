@@ -26,6 +26,9 @@ Explore the sections below to learn more about how the station works, its techni
    overview
    hardware
    software
+   database
+   spectrum-monitor
+   tc-generator
    ctrl-room
    references
 
