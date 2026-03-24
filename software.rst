@@ -15,12 +15,12 @@ Software Architecture
 Station Server
 --------------
 
-- **Rotor Manager**: TODO.
+- **Rotor Manager**: `https://github.com/spacelab-ufsc/grs-rotor-manager <https://github.com/spacelab-ufsc/grs-rotor-manager>`__
 - **FFT**: `https://github.com/spacelab-ufsc/grs-fft <https://github.com/spacelab-ufsc/grs-fft>`__
 - **IQ Receiver**: `https://github.com/spacelab-ufsc/grs-iq-rx <https://github.com/spacelab-ufsc/grs-iq-rx>`__
 - **Demodulator**: `https://github.com/spacelab-ufsc/grs-demodulator <https://github.com/spacelab-ufsc/grs-demodulator>`__
-- **Sync. Word Detector**: TODO.
-- **Frequency Synth.**: TODO.
+- **Sync. Word Detector**: `https://github.com/spacelab-ufsc/grs-syncword-detector <https://github.com/spacelab-ufsc/grs-syncword-detector>`__
+- **Frequency Synth.**: `https://github.com/spacelab-ufsc/grs-frequency-synthesizer <https://github.com/spacelab-ufsc/grs-frequency-synthesizer>`__
 - **Modulator**: `https://github.com/spacelab-ufsc/grs-modulator <https://github.com/spacelab-ufsc/grs-modulator>`__
 - **RF Front-End Controller**: TODO.
 
