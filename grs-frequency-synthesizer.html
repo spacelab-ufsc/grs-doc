@@ -1,0 +1,168 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GRS Frequency Synthesizer &mdash; SpaceLab Ground Station</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=4c0d86c8"></script>
+      <script src="_static/doctools.js?v=888ff710"></script>
+      <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="GRS IQ Receiver" href="grs-iq-rx.html" />
+    <link rel="prev" title="GRS Syncword Detector" href="grs-syncword-detector.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            grs-doc
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hardware.html">Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software.html">Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="database.html">Database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spectrum-monitor.html">Spectrum Monitor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tc-generator.html">Satellite TC Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ctrl-room.html">Control Room</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grs-fft.html">GRS FFT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grs-syncword-detector.html">GRS Syncword Detector</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">GRS Frequency Synthesizer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#key-features">Key Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#architecture">Architecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#usage">Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="grs-iq-rx.html">GRS IQ Receiver</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grs-rotor-manager.html">GRS Rotor Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grs-demodulator.html">GRS Demodulator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">grs-doc</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">GRS Frequency Synthesizer</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/grs-frequency-synthesizer.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="grs-frequency-synthesizer">
+<h1>GRS Frequency Synthesizer<a class="headerlink" href="#grs-frequency-synthesizer" title="Permalink to this heading"></a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading"></a></h2>
+<p>The GRS Frequency Synthesizer is an internal component of SpaceLab’s Ground Station software pipeline. It sits between the Station Manager and the IQ Receiver, responsible for computing the effective tuning frequency at any given moment by combining the base center frequency with a Doppler correction offset, and forwarding the result to the IQ Receiver as a tune command.</p>
+<p>The IQ Receiver is autonomous and does not depend on the Frequency Synthesizer to operate — it simply reacts to tune commands whenever they arrive. The Frequency Synthesizer is an optional layer that handles Doppler correction math on top, as well as any changes in the center frequency.</p>
+</section>
+<section id="key-features">
+<h2>Key Features<a class="headerlink" href="#key-features" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p><strong>Doppler Correction</strong>: Combines a base center frequency with a pre-computed Doppler offset to produce the effective tuning frequency at any given moment.</p></li>
+<li><p><strong>ZMQ Integration</strong>: Subscribes to commands from the Station Manager and publishes tune commands to the IQ Receiver over ZMQ.</p></li>
+<li><p><strong>Graceful Startup</strong>: Withholds tune commands until a valid center frequency has been received, preventing the IQ Receiver from being tuned to an undefined frequency.</p></li>
+<li><p><strong>Stateful Offset Tracking</strong>: Maintains the current Doppler offset independently from the center frequency, updating either as new commands arrive.</p></li>
+<li><p><strong>Lightweight</strong>: Implemented as a single Python class with minimal dependencies, designed to be embedded in the Station Manager process.</p></li>
+</ul>
+</section>
+<section id="architecture">
+<h2>Architecture<a class="headerlink" href="#architecture" title="Permalink to this heading"></a></h2>
+<p>The Frequency Synthesizer is structured as a managed pipeline component:</p>
+<ul class="simple">
+<li><p><strong>Input</strong>: A ZMQ SUB socket connected to the Station Manager, subscribed to center frequency and Doppler offset update commands.</p></li>
+<li><p><strong>State</strong>: Maintains the current center frequency and Doppler offset internally, updating each independently as commands arrive.</p></li>
+<li><p><strong>Computation</strong>: The effective tuning frequency is calculated as the sum of the center frequency and the current Doppler offset.</p></li>
+<li><p><strong>Output</strong>: A ZMQ PUB socket that publishes tune commands to the IQ Receiver whenever the effective frequency changes.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Frequency Synthesizer does not compute Doppler shifts itself. It expects the Station Manager or a dedicated propagator module to supply pre-computed Doppler offsets.</p>
+</div>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this heading"></a></h2>
+<p>To use the GRS Frequency Synthesizer:</p>
+<ol class="arabic simple">
+<li><p><strong>Install dependencies</strong>: Install the required Python packages.</p></li>
+<li><p><strong>Instantiate the class</strong>: Create a <code class="docutils literal notranslate"><span class="pre">FrequencySynthesizer</span></code> instance with the appropriate ZMQ addresses for the IQ Receiver and Station Manager.</p></li>
+<li><p><strong>Start the synthesizer</strong>: Call <code class="docutils literal notranslate"><span class="pre">run()</span></code> to begin listening for commands and publishing tune updates.</p></li>
+<li><p><strong>Send a center frequency</strong>: The Station Manager must send an initial <code class="docutils literal notranslate"><span class="pre">freq</span></code> command before any tune commands are forwarded to the IQ Receiver.</p></li>
+<li><p><strong>Send Doppler offsets</strong>: The Station Manager (or propagator module) sends periodic <code class="docutils literal notranslate"><span class="pre">doppler</span></code> commands to keep the tuning frequency compensated in real time.</p></li>
+<li><p><strong>Stop gracefully</strong>: Call <code class="docutils literal notranslate"><span class="pre">stop()</span></code> to shut down the synthesizer and release ZMQ resources.</p></li>
+</ol>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="grs-syncword-detector.html" class="btn btn-neutral float-left" title="GRS Syncword Detector" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="grs-iq-rx.html" class="btn btn-neutral float-right" title="GRS IQ Receiver" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, SpaceLab.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
