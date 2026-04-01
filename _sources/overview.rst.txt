@@ -40,6 +40,9 @@ A list with the main equipment of the station is available in :numref:`tab:equip
      - **Model**
    * - Server
      - Dell
+     - R240
+   * - Nobreak
+     - SMS
      - TBC
    * - Rotor
      - MFJ
@@ -47,9 +50,12 @@ A list with the main equipment of the station is available in :numref:`tab:equip
    * - VHF Antenna
      - M²
      - 2MCP14
-   * - UHF Antenna
-     - TBD
-     - TBD
+   * - UHF Antenna (400 MHz)
+     - M²
+     - 403CP20
+   * - UHF Antenna (468 MHz)
+     - M²
+     - 466CP42
    * - S-Band Antenna
      - TBD
      - TBD
@@ -65,9 +71,6 @@ A list with the main equipment of the station is available in :numref:`tab:equip
    * - PA (UHF)
      - Mini-Circuits
      - ZHL-50W-52-S+
-   * - PA (S-Band)
-     - TBD
-     - TBD
    * - LNA (VHF)
      - Mini-Circuits
      - ZFL-500LN+
@@ -85,4 +88,13 @@ A list with the main equipment of the station is available in :numref:`tab:equip
      - Rot2Prog
    * - Surveillance Camera
      - Intelbras
-     - TBC
+     - GRS iM7S
+   * - Network Switch
+     - Tp-Link
+     - TL-SG2218
+   * - RF Front-End Controller
+     - SpaceLab
+     - Custom
+   * - Power Supply (24 V)
+     - Montel Telecom
+     - MTAC2430B

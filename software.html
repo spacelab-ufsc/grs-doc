@@ -19,7 +19,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Database" href="database.html" />
+    <link rel="next" title="Control Room" href="ctrl-room.html" />
     <link rel="prev" title="Hardware" href="hardware.html" /> 
 </head>
 
@@ -52,19 +52,67 @@
 <li class="toctree-l3"><a class="reference internal" href="#control-desktop">Control Desktop</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#applications">Applications</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#database">Database</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#key-features">Key Features</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#architecture">Architecture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#usage">Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#spectrum-monitor">Spectrum Monitor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">Key Features</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">Architecture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#satellite-tc-generator">Satellite TC Generator</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id4">Key Features</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">Architecture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#grs-fft">GRS FFT</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id7">Key Features</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id8">Architecture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id9">Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#syncword-detector">Syncword Detector</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id10">Key Features</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id11">Architecture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id12">Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#frequency-synthesizer">Frequency Synthesizer</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id13">Key Features</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id14">Architecture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id15">Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#iq-receiver">IQ Receiver</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id16">Key Features</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id17">Architecture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id18">Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#rotor-manager">Rotor Manager</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id19">Key Features</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id20">Architecture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id21">Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#demodulator">Demodulator</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id22">Key Features</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id23">Architecture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id24">Usage</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#satellite-tracking">Satellite Tracking</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="database.html">Database</a></li>
-<li class="toctree-l1"><a class="reference internal" href="spectrum-monitor.html">Spectrum Monitor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tc-generator.html">Satellite TC Generator</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ctrl-room.html">Control Room</a></li>
-<li class="toctree-l1"><a class="reference internal" href="grs-fft.html">GRS FFT</a></li>
-<li class="toctree-l1"><a class="reference internal" href="grs-syncword-detector.html">GRS Syncword Detector</a></li>
-<li class="toctree-l1"><a class="reference internal" href="grs-frequency-synthesizer.html">GRS Frequency Synthesizer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="grs-iq-rx.html">GRS IQ Receiver</a></li>
-<li class="toctree-l1"><a class="reference internal" href="grs-rotor-manager.html">GRS Rotor Manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="grs-demodulator.html">GRS Demodulator</a></li>
 <li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
 </ul>
 
@@ -96,10 +144,10 @@
 <h1>Software<a class="headerlink" href="#software" title="Permalink to this heading"></a></h1>
 <section id="software-architecture">
 <h2>Software Architecture<a class="headerlink" href="#software-architecture" title="Permalink to this heading"></a></h2>
-<figure class="align-center" id="id2">
+<figure class="align-center" id="id26">
 <span id="fig-software-diagram"></span><a class="reference internal image-reference" href="_images/block-diagram-software.png"><img alt="_images/block-diagram-software.png" src="_images/block-diagram-software.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 8 </span><span class="caption-text">Ground station software diagram.</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Fig. 8 </span><span class="caption-text">Ground station software diagram.</span><a class="headerlink" href="#id26" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <section id="station-server">
@@ -119,7 +167,7 @@
 <h3>Control Server<a class="headerlink" href="#control-server" title="Permalink to this heading"></a></h3>
 <ul class="simple">
 <li><p><strong>Dashboard Backend</strong>: Grafana.</p></li>
-<li><p><strong>Database</strong>: <a class="reference internal" href="database.html"><span class="doc">Database</span></a></p></li>
+<li><p><strong>Database</strong>: <a class="reference internal" href="#database">Database</a></p></li>
 <li><p><strong>Data Link Layer Decoders</strong>: TODO.</p></li>
 <li><p><strong>Network Layer Decoders</strong>: TODO.</p></li>
 <li><p><strong>Satellite Data Decoders</strong>: TODO.</p></li>
@@ -135,18 +183,362 @@
 <li><p><strong>Dashboard</strong>: TODO.</p></li>
 <li><p><strong>Satellite Tracker</strong>: GPredict.</p></li>
 <li><p><strong>GRS Manager</strong>: TODO.</p></li>
-<li><p><strong>Spectrum Monitor</strong>: <a class="reference internal" href="spectrum-monitor.html"><span class="doc">Spectrum Monitor</span></a></p></li>
-<li><p><strong>Satellite TC Generator</strong>: <a class="reference internal" href="tc-generator.html"><span class="doc">Satellite TC Generator</span></a></p></li>
+<li><p><strong>Spectrum Monitor</strong>: <a class="reference internal" href="#spectrum-monitor">Spectrum Monitor</a></p></li>
+<li><p><strong>Satellite TC Generator</strong>: <a class="reference external" href="https://github.com/spacelab-ufsc/grs-tc-generator">https://github.com/spacelab-ufsc/grs-tc-generator</a></p></li>
 </ul>
+</section>
+</section>
+<section id="applications">
+<h2>Applications<a class="headerlink" href="#applications" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="#database">Database</a></p></li>
+<li><p><a class="reference internal" href="#spectrum-monitor">Spectrum Monitor</a></p></li>
+<li><p><a class="reference internal" href="#satellite-tc-generator">Satellite TC Generator</a></p></li>
+<li><p><a class="reference internal" href="#grs-fft">GRS FFT</a></p></li>
+<li><p><a class="reference internal" href="#syncword-detector">Syncword Detector</a></p></li>
+<li><p><a class="reference internal" href="#frequency-synthesizer">Frequency Synthesizer</a></p></li>
+<li><p><a class="reference internal" href="#iq-receiver">IQ Receiver</a></p></li>
+<li><p><a class="reference internal" href="#rotor-manager">Rotor Manager</a></p></li>
+<li><p><a class="reference internal" href="#demodulator">Demodulator</a></p></li>
+</ul>
+<section id="database">
+<h3>Database<a class="headerlink" href="#database" title="Permalink to this heading"></a></h3>
+<p>The database component is responsible for storing and managing the vast amount of data generated by the ground station. This includes satellite telemetry, mission control data, and station logs. The system utilizes a combination of PostgreSQL and TimescaleDB to efficiently handle time-series data, which is critical for orbital analysis and historical tracking.</p>
+<section id="key-features">
+<h4>Key Features<a class="headerlink" href="#key-features" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><p><strong>Time-Series Optimization</strong>: Leverages TimescaleDB to handle high-frequency telemetry data with high ingestion rates.</p></li>
+<li><dl class="simple">
+<dt><strong>Data Segregation</strong>: Uses distinct schemas for different types of data:</dt><dd><ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">mission_control</span></code>: Stores dimension data such as satellite metadata and packet definitions.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">telemetry_stream</span></code>: Stores fact data (Hypertables) for massive volumes of signal readings.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p><strong>Performance</strong>: Optimized for write-heavy workloads by minimizing foreign key constraints on high-volume tables and using batch insertion strategies.</p></li>
+</ul>
+</section>
+<section id="architecture">
+<h4>Architecture<a class="headerlink" href="#architecture" title="Permalink to this heading"></a></h4>
+<p>The database architecture is designed to support the specific needs of satellite operations:</p>
+<ol class="arabic simple">
+<li><p><strong>Dimension Tables</strong>: Located in the <code class="docutils literal notranslate"><span class="pre">mission_control</span></code> schema, these tables hold slowly changing data like satellite identifiers and packet configurations.</p></li>
+<li><p><strong>Fact Tables (Hypertables)</strong>: Located in the <code class="docutils literal notranslate"><span class="pre">telemetry_stream</span></code> schema, these tables are partitioned by time to allow for efficient querying and management of historical data.</p></li>
+</ol>
+</section>
+<section id="usage">
+<h4>Usage<a class="headerlink" href="#usage" title="Permalink to this heading"></a></h4>
+<p>Data population strategies include:</p>
+<ul class="simple">
+<li><p><strong>Batch Inserts</strong>: For real-time applications, inserting data in large batches is recommended to maximize throughput.</p></li>
+<li><p><strong>Bulk Import</strong>: The <code class="docutils literal notranslate"><span class="pre">COPY</span></code> command is used for importing large historical datasets from CSV files.</p></li>
+</ul>
+<p>For more details on the database schema and setup scripts, refer to the project repository.</p>
+</section>
+</section>
+<section id="spectrum-monitor">
+<h3>Spectrum Monitor<a class="headerlink" href="#spectrum-monitor" title="Permalink to this heading"></a></h3>
+<p>The Spectrum Monitor is a real-time visualization tool designed for the FloripaSat-2A ground station. It processes raw IQ samples via UDP, performs Fast Fourier Transform (FFT), and renders an interactive Waterfall display in the browser. This component is essential for monitoring signal quality and detecting interference during satellite passes.</p>
+<section id="id1">
+<h4>Key Features<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><p><strong>Real-time FFT Plot</strong>: Displays the instantaneous spectral density as a line graph.</p></li>
+<li><p><strong>Waterfall Display</strong>: Provides a historical view of frequency over time using a thermal color palette.</p></li>
+<li><p><strong>Dynamic Gain Control</strong>: Allows users to adjust the visual sensitivity of the signal display.</p></li>
+<li><p><strong>Signal Detection</strong>: Includes a configurable threshold line with visual alerts for signal detection.</p></li>
+<li><p><strong>Microservices Architecture</strong>: Built to be easily integrated via Docker and WebSockets.</p></li>
+</ul>
+</section>
+<section id="id2">
+<h4>Architecture<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h4>
+<p>The Spectrum Monitor is structured as follows:</p>
+<ul class="simple">
+<li><p><strong>Backend</strong>: Python-based application using Flask and Socket.IO for real-time communication.</p></li>
+<li><p><strong>DSP Processing</strong>: Utilizes NumPy for Digital Signal Processing (DSP), including Hamming windowing and FFT conversion.</p></li>
+<li><p><strong>Frontend</strong>: HTML5 Canvas for high-performance rendering of the waterfall display.</p></li>
+<li><p><strong>Concurrency</strong>: Managed by Eventlet to handle network threads and web server requests efficiently.</p></li>
+</ul>
+</section>
+<section id="id3">
+<h4>Usage<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h4>
+<p>To use the Spectrum Monitor:</p>
+<ol class="arabic simple">
+<li><p><strong>Start the Simulator</strong>: Run the mock IQ sender to simulate radio signals.</p></li>
+<li><p><strong>Launch the Server</strong>: Start the backend processing server.</p></li>
+<li><p><strong>Access the Interface</strong>: Open a web browser to view the real-time spectrum data.</p></li>
+</ol>
+<p>For integration with real hardware, the UDP stream can be configured to receive data from the Station Server.</p>
+</section>
+</section>
+<section id="satellite-tc-generator">
+<h3>Satellite TC Generator<a class="headerlink" href="#satellite-tc-generator" title="Permalink to this heading"></a></h3>
+<p>The Satellite TC Generator is a web-based application designed for the generation and management of telecommands for satellites. It provides a user-friendly interface for creating, scheduling, and sending commands to the satellite.</p>
+<section id="id4">
+<h4>Key Features<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><p><strong>Web Interface</strong>: Built with Flask, offering a responsive and intuitive UI for operators.</p></li>
+<li><p><strong>Command Management</strong>: Allows for the creation and storage of telecommand definitions.</p></li>
+<li><p><strong>Database Integration</strong>: Uses PostgreSQL for persistent storage of command history and configurations.</p></li>
+<li><p><strong>Microservices Architecture</strong>: Designed to be deployed as a containerized service within the larger ground station ecosystem.</p></li>
+</ul>
+</section>
+<section id="id5">
+<h4>Architecture<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h4>
+<p>The TC Generator follows a modular architecture:</p>
+<ul class="simple">
+<li><p><strong>Core Application</strong>: Flask-based web server handling HTTP requests and routing.</p></li>
+<li><p><strong>Services Layer</strong>: Encapsulates business logic for telecommand processing.</p></li>
+<li><p><strong>Repositories</strong>: Manages data access using database adapters.</p></li>
+<li><p><strong>Models</strong>: Defines the data structures for satellites and telecommands.</p></li>
+</ul>
+</section>
+<section id="id6">
+<h4>Usage<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h4>
+<p>To set up and run the TC Generator:</p>
+<ol class="arabic simple">
+<li><p><strong>Environment Setup</strong>: Create a virtual environment and install dependencies.</p></li>
+<li><p><strong>Database Initialization</strong>: Run database migrations to set up the schema.</p></li>
+<li><p><strong>Run Application</strong>: Start the Flask server to access the web interface.</p></li>
+</ol>
+<p>The application is configured via environment variables and can be easily deployed using Docker.</p>
+</section>
+</section>
+<section id="grs-fft">
+<h3>GRS FFT<a class="headerlink" href="#grs-fft" title="Permalink to this heading"></a></h3>
+<p>GRS FFT is a real-time Fast Fourier Transform (FFT) calculator for SpaceLab’s Ground Station. It is part of the ground station’s signal processing pipeline, sitting between the IQ sample receiver and the spectrum visualization components.</p>
+<p>The program subscribes to a ZMQ publisher socket where it receives a continuous stream of raw IQ samples. Once a full frame is accumulated, it applies a Hann window to reduce spectral leakage and computes a complex FFT, which can be used by downstream components.</p>
+<section id="id7">
+<h4>Key Features<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><p><strong>Real-time IQ Processing</strong>: Continuously receives IQ sample streams over ZMQ.</p></li>
+<li><p><strong>Hann Windowing</strong>: Applies a Hann window to both I and Q components before transformation to minimize spectral leakage.</p></li>
+<li><p><strong>ZMQ Integration</strong>: Built around the ZeroMQ messaging library for seamless integration with other ground station microservices.</p></li>
+<li><p><strong>Lightweight and Efficient</strong>: Written in C with minimal dependencies, optimized for low-latency signal processing.</p></li>
+</ul>
+</section>
+<section id="id8">
+<h4>Architecture<a class="headerlink" href="#id8" title="Permalink to this heading"></a></h4>
+<p>GRS FFT is structured around a simple and efficient signal processing pipeline:</p>
+<ul class="simple">
+<li><p><strong>Input</strong>: A ZMQ SUB socket connected to the upstream IQ receiver.</p></li>
+<li><p><strong>Buffering</strong>: IQ samples are accumulated into fixed-size frames before processing.</p></li>
+<li><p><strong>DSP Processing</strong>: A Hann window is applied prior to FFT computation.</p></li>
+<li><p><strong>FFT Computation</strong>: An in-place forward complex DFT is performed on each windowed sample frame.</p></li>
+<li><p><strong>Output</strong>: The resulting frequency-domain data is made available to downstream components such as the Spectrum Monitor.</p></li>
+</ul>
+</section>
+<section id="id9">
+<h4>Usage<a class="headerlink" href="#id9" title="Permalink to this heading"></a></h4>
+<p>To use GRS FFT:</p>
+<ol class="arabic simple">
+<li><p><strong>Install dependencies</strong>: Install the required libraries.</p></li>
+<li><p><strong>Build the project</strong>: Compile the project using the provided build system.</p></li>
+<li><p><strong>Start the IQ receiver</strong>: Ensure the upstream IQ sample publisher is running and reachable.</p></li>
+<li><p><strong>Run GRS FFT</strong>: Execute the compiled binary to begin receiving samples and computing FFT frames in real time.</p></li>
+</ol>
+</section>
+</section>
+<section id="syncword-detector">
+<h3>Syncword Detector<a class="headerlink" href="#syncword-detector" title="Permalink to this heading"></a></h3>
+<p>GRS Syncword Detector is a C library component of SpaceLab’s Ground Station signal processing pipeline. It sits between the demodulator and the decoder, and is responsible for identifying the start of a transmission by detecting a known synchronization word (syncword) within an incoming bit stream.</p>
+<p>The component supports both MSB-first and LSB-first bit endianness, and performs tolerance-based matching by counting the number of bits that match the expected syncword pattern, allowing it to handle minor bit errors in the received stream.</p>
+<section id="id10">
+<h4>Key Features<a class="headerlink" href="#id10" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><p><strong>Syncword Detection</strong>: Identifies the start of a transmission frame by searching for a known bit pattern in the incoming stream.</p></li>
+<li><p><strong>Endianness Support</strong>: Handles both MSB-first and LSB-first bit ordering to accommodate different modulation and framing conventions.</p></li>
+<li><p><strong>Tolerance-Based Matching</strong>: Counts matching bits rather than requiring a strict equality, providing robustness against minor bit errors.</p></li>
+<li><p><strong>Lightweight</strong>: Written in C with no external dependencies, suitable for integration into larger ground station pipelines.</p></li>
+</ul>
+</section>
+<section id="id11">
+<h4>Architecture<a class="headerlink" href="#id11" title="Permalink to this heading"></a></h4>
+<p>The syncword detector is structured as a reusable library component:</p>
+<ul class="simple">
+<li><p><strong>Input</strong>: A raw bit stream produced by the upstream demodulator.</p></li>
+<li><p><strong>Syncword Definition</strong>: A configurable byte sequence and endianness that defines the expected synchronization pattern.</p></li>
+<li><p><strong>Bit Expansion</strong>: Each syncword byte is expanded into its individual bits, respecting the configured endianness, for bit-level comparison.</p></li>
+<li><p><strong>Matching</strong>: A sliding window scans the incoming bit stream and counts how many bits match the syncword pattern at each position.</p></li>
+<li><p><strong>Output</strong>: The match score at each position, which the caller uses to determine the start of a transmission frame and pass it to the decoder.</p></li>
+</ul>
+</section>
+<section id="id12">
+<h4>Usage<a class="headerlink" href="#id12" title="Permalink to this heading"></a></h4>
+<p>To use GRS Syncword Detector:</p>
+<ol class="arabic simple">
+<li><p><strong>Build the project</strong>: Compile the component using the provided build system.</p></li>
+<li><p><strong>Define the syncword</strong>: Create a syncword instance by providing the expected byte sequence and bit endianness.</p></li>
+<li><p><strong>Feed the bit stream</strong>: Pass incoming bits from the demodulator through the matching function.</p></li>
+<li><p><strong>Detect frame start</strong>: Use the match score to determine when a valid syncword has been found and forward the frame to the decoder.</p></li>
+<li><p><strong>Clean up</strong>: Destroy the syncword instance to free allocated resources.</p></li>
+</ol>
+</section>
+</section>
+<section id="frequency-synthesizer">
+<h3>Frequency Synthesizer<a class="headerlink" href="#frequency-synthesizer" title="Permalink to this heading"></a></h3>
+<p>The GRS Frequency Synthesizer is an internal component of SpaceLab’s Ground Station software pipeline. It sits between the Station Manager and the IQ Receiver, responsible for computing the effective tuning frequency at any given moment by combining the base center frequency with a Doppler correction offset, and forwarding the result to the IQ Receiver as a tune command.</p>
+<p>The IQ Receiver is autonomous and does not depend on the Frequency Synthesizer to operate — it simply reacts to tune commands whenever they arrive. The Frequency Synthesizer is an optional layer that handles Doppler correction math on top, as well as any changes in the center frequency.</p>
+<section id="id13">
+<h4>Key Features<a class="headerlink" href="#id13" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><p><strong>Doppler Correction</strong>: Combines a base center frequency with a pre-computed Doppler offset to produce the effective tuning frequency at any given moment.</p></li>
+<li><p><strong>ZMQ Integration</strong>: Subscribes to commands from the Station Manager and publishes tune commands to the IQ Receiver over ZMQ.</p></li>
+<li><p><strong>Graceful Startup</strong>: Withholds tune commands until a valid center frequency has been received, preventing the IQ Receiver from being tuned to an undefined frequency.</p></li>
+<li><p><strong>Stateful Offset Tracking</strong>: Maintains the current Doppler offset independently from the center frequency, updating either as new commands arrive.</p></li>
+<li><p><strong>Lightweight</strong>: Implemented as a single Python class with minimal dependencies, designed to be embedded in the Station Manager process.</p></li>
+</ul>
+</section>
+<section id="id14">
+<h4>Architecture<a class="headerlink" href="#id14" title="Permalink to this heading"></a></h4>
+<p>The Frequency Synthesizer is structured as a managed pipeline component:</p>
+<ul class="simple">
+<li><p><strong>Input</strong>: A ZMQ SUB socket connected to the Station Manager, subscribed to center frequency and Doppler offset update commands.</p></li>
+<li><p><strong>State</strong>: Maintains the current center frequency and Doppler offset internally, updating each independently as commands arrive.</p></li>
+<li><p><strong>Computation</strong>: The effective tuning frequency is calculated as the sum of the center frequency and the current Doppler offset.</p></li>
+<li><p><strong>Output</strong>: A ZMQ PUB socket that publishes tune commands to the IQ Receiver whenever the effective frequency changes.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Frequency Synthesizer does not compute Doppler shifts itself. It expects the Station Manager or a dedicated propagator module to supply pre-computed Doppler offsets.</p>
+</div>
+</section>
+<section id="id15">
+<h4>Usage<a class="headerlink" href="#id15" title="Permalink to this heading"></a></h4>
+<p>To use the GRS Frequency Synthesizer:</p>
+<ol class="arabic simple">
+<li><p><strong>Install dependencies</strong>: Install the required Python packages.</p></li>
+<li><p><strong>Instantiate the class</strong>: Create a <code class="docutils literal notranslate"><span class="pre">FrequencySynthesizer</span></code> instance with the appropriate ZMQ addresses for the IQ Receiver and Station Manager.</p></li>
+<li><p><strong>Start the synthesizer</strong>: Call <code class="docutils literal notranslate"><span class="pre">run()</span></code> to begin listening for commands and publishing tune updates.</p></li>
+<li><p><strong>Send a center frequency</strong>: The Station Manager must send an initial <code class="docutils literal notranslate"><span class="pre">freq</span></code> command before any tune commands are forwarded to the IQ Receiver.</p></li>
+<li><p><strong>Send Doppler offsets</strong>: The Station Manager (or propagator module) sends periodic <code class="docutils literal notranslate"><span class="pre">doppler</span></code> commands to keep the tuning frequency compensated in real time.</p></li>
+<li><p><strong>Stop gracefully</strong>: Call <code class="docutils literal notranslate"><span class="pre">stop()</span></code> to shut down the synthesizer and release ZMQ resources.</p></li>
+</ol>
+</section>
+</section>
+<section id="iq-receiver">
+<h3>IQ Receiver<a class="headerlink" href="#iq-receiver" title="Permalink to this heading"></a></h3>
+<p>The GRS IQ Receiver is the SDR front-end of SpaceLab’s Ground Station signal processing pipeline. It reads raw IQ samples from a Software Defined Radio (SDR) device and publishes them over ZMQ to downstream components such as the FFT Calculator and the demodulator.</p>
+<p>The component is available in two implementations targeting different SDR hardware. Both normalize raw samples to floating-point IQ format and publish them continuously for consumption by downstream pipeline components.</p>
+<section id="id16">
+<h4>Key Features<a class="headerlink" href="#id16" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><p><strong>Dual Implementation</strong>: Available as a C application targeting RTL-SDR devices, and as a Python application targeting Pluto and USRP devices.</p></li>
+<li><p><strong>Continuous IQ Streaming</strong>: Publishes a continuous stream of normalized floating-point IQ samples over ZMQ for consumption by downstream components.</p></li>
+<li><p><strong>Dynamic Retuning</strong>: The Python implementation listens for tune commands from the Frequency Synthesizer, allowing the center frequency to be updated at runtime without restarting.</p></li>
+<li><p><strong>Flexible Acquisition</strong>: The C implementation supports both synchronous and asynchronous acquisition modes, with configurable gain, sample rate, bandwidth, PPM correction, and block size.</p></li>
+<li><p><strong>ZMQ Integration</strong>: Built around the ZeroMQ messaging library for integration with other ground station microservices.</p></li>
+</ul>
+</section>
+<section id="id17">
+<h4>Architecture<a class="headerlink" href="#id17" title="Permalink to this heading"></a></h4>
+<p>The IQ Receiver sits between the Frequency Synthesizer and the downstream signal processing components:</p>
+<ul class="simple">
+<li><p><strong>SDR Input</strong>: Acquires IQ samples directly from the connected SDR hardware.</p></li>
+<li><p><strong>Normalization</strong>: Raw device samples are converted to normalized floating-point complex (IQ) format before publishing.</p></li>
+<li><p><strong>Buffering</strong>: Samples are accumulated into fixed-size buffers before being dispatched to avoid flooding downstream subscribers.</p></li>
+<li><p><strong>ZMQ Output</strong>: A ZMQ PUB socket continuously publishes buffered IQ sample frames to the FFT Calculator and demodulator.</p></li>
+<li><p><strong>Retune Input</strong>: A ZMQ SUB socket listens for tune commands from the Frequency Synthesizer and updates the SDR center frequency at runtime.</p></li>
+</ul>
+</section>
+<section id="id18">
+<h4>Usage<a class="headerlink" href="#id18" title="Permalink to this heading"></a></h4>
+<p>To use the GRS IQ Receiver:</p>
+<ol class="arabic simple">
+<li><p><strong>Install dependencies</strong>: Install the required libraries for the chosen implementation.</p></li>
+<li><p><strong>Connect the SDR hardware</strong>: Ensure the SDR device is connected and recognized by the system.</p></li>
+<li><p><strong>Start the IQ Receiver</strong>: Launch the application with the desired center frequency, sample rate, and gain.</p></li>
+<li><p><strong>Start downstream components</strong>: The FFT Calculator and demodulator can now connect and begin consuming the published IQ stream.</p></li>
+<li><p><strong>Retune at runtime</strong>: Start the Frequency Synthesizer to send dynamic tune commands as the satellite pass progresses.</p></li>
+</ol>
+</section>
+</section>
+<section id="rotor-manager">
+<h3>Rotor Manager<a class="headerlink" href="#rotor-manager" title="Permalink to this heading"></a></h3>
+<p>The GRS Rotor Manager is an internal component of SpaceLab’s Ground Station software pipeline. It is responsible for sending positioning commands to an AlfaSpid RAS-2 azimuth/elevation rotator via the Rot2Prog binary serial protocol, allowing the ground station antenna to physically track a satellite pass.</p>
+<p>The component is driven by the Station Manager, which supplies azimuth and elevation angles computed by a propagator module. The Rotor Manager translates these angles into binary protocol packets and dispatches them to the rotator over ZMQ, while also handling status queries and stop commands.</p>
+<section id="id19">
+<h4>Key Features<a class="headerlink" href="#id19" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><p><strong>Antenna Tracking</strong>: Commands the AlfaSpid RAS-2 rotator to continuously point the antenna at the satellite by accepting azimuth and elevation targets from the Station Manager.</p></li>
+<li><p><strong>Rot2Prog Protocol</strong>: Encodes all commands as 11-byte binary packets following the Rot2Prog protocol, compatible with the AlfaSpid controller.</p></li>
+<li><p><strong>Status Polling</strong>: Supports querying the rotator’s current position, returning the live azimuth and elevation reported by the hardware.</p></li>
+<li><p><strong>ZMQ Integration</strong>: Sends commands over a ZMQ PUSH socket and receives status responses over a ZMQ SUB socket, integrating seamlessly with the rest of the ground station pipeline.</p></li>
+<li><p><strong>Hardware Simulator</strong>: Ships with a standalone rotator simulator for testing the pipeline without physical hardware.</p></li>
+</ul>
+</section>
+<section id="id20">
+<h4>Architecture<a class="headerlink" href="#id20" title="Permalink to this heading"></a></h4>
+<p>The Rotor Manager acts as the bridge between the Station Manager and the physical rotator hardware:</p>
+<ul class="simple">
+<li><p><strong>Input</strong>: Method calls from the Station Manager — <code class="docutils literal notranslate"><span class="pre">set_position()</span></code>, <code class="docutils literal notranslate"><span class="pre">stop()</span></code>, and <code class="docutils literal notranslate"><span class="pre">request_status()</span></code> — supplying azimuth and elevation angles.</p></li>
+<li><p><strong>Encoding</strong>: Target angles are encoded into the Rot2Prog 11-byte binary packet format.</p></li>
+<li><p><strong>ZMQ Output</strong>: Packets are dispatched over a ZMQ PUSH socket to the rotator or its simulator.</p></li>
+<li><p><strong>Status Input</strong>: A ZMQ SUB socket receives status responses from the rotator, returning the current azimuth and elevation as packed 32-bit floats.</p></li>
+</ul>
+</section>
+<section id="id21">
+<h4>Usage<a class="headerlink" href="#id21" title="Permalink to this heading"></a></h4>
+<p>To use the GRS Rotor Manager:</p>
+<ol class="arabic simple">
+<li><p><strong>Install dependencies</strong>: Install the required Python packages.</p></li>
+<li><p><strong>Set the rotator to CPU mode</strong>: Ensure the AlfaSpid RAS-2 front panel is set to CPU (Auto) mode so it accepts software commands.</p></li>
+<li><p><strong>Instantiate the class</strong>: Create a <code class="docutils literal notranslate"><span class="pre">RotorManager</span></code> instance, passing the ZMQ address of the rotator or simulator.</p></li>
+<li><p><strong>Issue positioning commands</strong>: Call <code class="docutils literal notranslate"><span class="pre">set_position()</span></code> with the azimuth and elevation to point the antenna.</p></li>
+<li><p><strong>Poll status as needed</strong>: Call <code class="docutils literal notranslate"><span class="pre">request_status()</span></code> to retrieve the rotator’s current position.</p></li>
+<li><p><strong>Stop and clean up</strong>: Call <code class="docutils literal notranslate"><span class="pre">stop()</span></code> to halt the rotator and <code class="docutils literal notranslate"><span class="pre">close()</span></code> to release ZMQ resources after the satellite pass.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For testing without hardware, run the included <code class="docutils literal notranslate"><span class="pre">rotor_simulator.py</span></code> in place of the physical rotator. It accepts the same ZMQ commands and responds with simulated position data.</p>
+</div>
+</section>
+</section>
+<section id="demodulator">
+<h3>Demodulator<a class="headerlink" href="#demodulator" title="Permalink to this heading"></a></h3>
+<p>The GRS Demodulator is a GMSK demodulator for SpaceLab’s Ground Station signal processing pipeline. It sits between the IQ Receiver and the syncword detector and decoder, receiving a continuous stream of complex IQ samples over ZMQ and publishing a recovered bitstream for downstream processing.</p>
+<section id="id22">
+<h4>Key Features<a class="headerlink" href="#id22" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><p><strong>GMSK Demodulation</strong>: Implements a full software GMSK demodulation pipeline operating on complex IQ samples.</p></li>
+<li><p><strong>GMSK Modulation</strong>: Includes a GMSK modulator, enabling closed-loop simulation and unit testing of the full modulation/demodulation chain without hardware.</p></li>
+<li><p><strong>Gaussian Matched Filtering</strong>: Applies a Gaussian filter matched to the signal’s BT product to reduce inter-symbol interference prior to symbol decisions.</p></li>
+<li><p><strong>Symbol Timing Recovery</strong>: Synchronizes sampling instants to symbol boundaries to reliably recover the bitstream under realistic channel conditions.</p></li>
+<li><p><strong>ZMQ Integration</strong>: Subscribes to IQ sample frames from the IQ Receiver and publishes the recovered bitstream to downstream components over ZMQ.</p></li>
+</ul>
+</section>
+<section id="id23">
+<h4>Architecture<a class="headerlink" href="#id23" title="Permalink to this heading"></a></h4>
+<p>The GRS Demodulator is structured as a streaming DSP pipeline:</p>
+<ul class="simple">
+<li><p><strong>Input</strong>: A ZMQ SUB socket receiving buffered complex IQ sample frames from the IQ Receiver.</p></li>
+<li><p><strong>Frequency Discriminator</strong>: Extracts instantaneous frequency deviations by computing the phase derivative of the incoming IQ samples.</p></li>
+<li><p><strong>Gaussian Matched Filter</strong>: Filters the frequency deviation signal with a Gaussian filter matched to the BT product, reducing inter-symbol interference.</p></li>
+<li><p><strong>Normalization</strong>: Centers and scales the filtered signal to ensure reliable downstream symbol decisions.</p></li>
+<li><p><strong>Timing Recovery</strong>: Recovers symbol timing from the filtered signal, aligning the sampling instants to the transmitted symbol boundaries.</p></li>
+<li><p><strong>Hard Decision</strong>: Thresholds the soft symbols into a binary bitstream.</p></li>
+<li><p><strong>Output</strong>: A ZMQ PUB socket publishing the recovered bitstream to the syncword detector and decoder.</p></li>
+</ul>
+</section>
+<section id="id24">
+<h4>Usage<a class="headerlink" href="#id24" title="Permalink to this heading"></a></h4>
+<p>To use the GRS Demodulator:</p>
+<ol class="arabic simple">
+<li><p><strong>Install dependencies</strong>: Install the required Python packages.</p></li>
+<li><p><strong>Start the IQ Receiver</strong>: Ensure the upstream IQ Receiver is running and publishing IQ sample frames.</p></li>
+<li><p><strong>Run the demodulator</strong>: Launch the application to begin consuming IQ frames and publishing the recovered bitstream.</p></li>
+<li><p><strong>Start downstream components</strong>: The syncword detector and decoder can now connect and begin processing the demodulated bitstream.</p></li>
+</ol>
+</section>
 </section>
 </section>
 <section id="satellite-tracking">
 <h2>Satellite Tracking<a class="headerlink" href="#satellite-tracking" title="Permalink to this heading"></a></h2>
-<p>To track the satellite and for orbit prediction, the GPredict software <span id="id1">[<a class="reference internal" href="references.html#id9" title="Alexandru Csete. Gpredict. 2021. Available at &lt;http://gpredict.oz9aec.net/&gt;.">Cse21</a>]</span> will be used. Gpredict is a real-time satellite tracking and orbit prediction application. It can track a large number of satellites and display their position and other data in lists, tables, maps, and polar plots (radar view). Gpredict can also predict the time of future passes for a satellite, and provide you with detailed information about each pass. Gpredict is free software licensed under the GNU General Public License. A picture of the main window of GPredict can be seen in <a class="reference internal" href="#fig-gpredict"><span class="std std-numref">Fig. 9</span></a>.</p>
-<figure class="align-center" id="id3">
+<p>To track the satellite and for orbit prediction, the GPredict software <span id="id25">[<a class="reference internal" href="references.html#id9" title="Alexandru Csete. Gpredict. 2021. Available at &lt;http://gpredict.oz9aec.net/&gt;.">Cse21</a>]</span> will be used. Gpredict is a real-time satellite tracking and orbit prediction application. It can track a large number of satellites and display their position and other data in lists, tables, maps, and polar plots (radar view). Gpredict can also predict the time of future passes for a satellite, and provide you with detailed information about each pass. Gpredict is free software licensed under the GNU General Public License. A picture of the main window of GPredict can be seen in <a class="reference internal" href="#fig-gpredict"><span class="std std-numref">Fig. 9</span></a>.</p>
+<figure class="align-center" id="id27">
 <span id="fig-gpredict"></span><a class="reference internal image-reference" href="_images/gpredict.png"><img alt="_images/gpredict.png" src="_images/gpredict.png" style="width: 100%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 9 </span><span class="caption-text">Main window of GPredict.</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+<p><span class="caption-number">Fig. 9 </span><span class="caption-text">Main window of GPredict.</span><a class="headerlink" href="#id27" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -157,7 +549,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="hardware.html" class="btn btn-neutral float-left" title="Hardware" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="database.html" class="btn btn-neutral float-right" title="Database" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="ctrl-room.html" class="btn btn-neutral float-right" title="Control Room" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
