@@ -26,16 +26,7 @@ Explore the sections below to learn more about how the station works, its techni
    overview
    hardware
    software
-   database
-   spectrum-monitor
-   tc-generator
    ctrl-room
-   grs-fft
-   grs-syncword-detector
-   grs-frequency-synthesizer
-   grs-iq-rx
-   grs-rotor-manager
-   grs-demodulator
    references
 
 For any questions or further details, refer to the relevant documentation or contact the SpaceLab team at `contact@spacelab.ufsc.br <mailto:contact@spacelab.ufsc.br>`_.
