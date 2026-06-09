@@ -1,0 +1,5 @@
+{
+    'papersize': 'a4paper',
+    'pointsize': '12pt',
+    'fncychap': '',
+}
