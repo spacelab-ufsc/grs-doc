@@ -10,7 +10,7 @@ import sys
 import ast
 
 project = 'grs-doc'
-copyright = '2025, SpaceLab'
+copyright = '2026, SpaceLab'
 author = 'SpaceLab'
 release = 'v0.1'
 
@@ -54,10 +54,10 @@ latex_documents = [
     (
         'pdf-index',                        # Root document (e.g., 'index' or 'pdf-index')
         'slb-grs-doc-' + release + '.tex',  # Output LaTeX file name (no spaces)
-        'SpaceLab Ground Station',          # Document title (can be empty to use the root doc's title)
+        'Ground Station',                   # Document title (can be empty to use the root doc's title)
         'SpaceLab',                         # Author name(s).
         'manual',                           # Document type: 'manual' or 'howto'
-        False,                              # toctree_only: if True, only include docs in toctree
+        True,                               # toctree_only: if True, only include docs in toctree
     ),
 ]
 
@@ -76,3 +76,9 @@ with open(latex_elements_file, "rt") as file:
     latex_config = file.read()
     if latex_elements == {}:
       latex_elements = ast.literal_eval(latex_config)
+
+latex_additional_files = [
+    'spacelab_book.sty',
+    'img/by-sa.pdf',
+    'img/spacelab-logo-full-color-rgb-1000px@72ppi.png',
+]
