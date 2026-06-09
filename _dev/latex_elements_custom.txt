@@ -70,14 +70,17 @@ June 2026
 
 \textbf{Project Chief:}
 
-Eduardo Augusto Bezerra
+Eduardo Augusto Bezerra <\href{mailto:Eduardo.Bezerra@ufsc.br}{Eduardo.Bezerra@ufsc.br}>
 
 \vspace{1cm}
 
 \textbf{Authors:}
 
-Gabriel Mariano Marcelino \\
-Vitória Beatriz Bianchin \\
+Arthur Marraui <\href{mailto:arthurmarraui@gmail.com}{arthurmarraui@gmail.com}> \\
+Carlos Augusto Porto Freitas <\href{mailto:carlos.freitas@spacelab.ufsc.br}{carlos.freitas@spacelab.ufsc.br}> \\
+Carlos Hayden Junior <\href{mailto:carloshaydenjunior@gmail.com}{carloshaydenjunior@gmail.com}> \\
+Gabriel Mariano Marcelino <\href{mailto:gabriel.mm8@gmail.com}{gabriel.marcelino@spacelab.ufsc.br}> \\
+Vitória Beatriz Bianchin <\href{mailto:vitoria.bianchin@spacelab.ufsc.br}{vitoria.bianchin@spacelab.ufsc.br}> \\
 
 \vspace{1cm}
 
@@ -98,7 +101,7 @@ Vitória Beatriz Bianchin \\
             \toprule[1.5pt]
             \textbf{Version} & \textbf{Author}  & \textbf{Changes}    & \textbf{Date} \\
             \midrule
-            0.1     & G. M. Marcelino           & First release       & 2026/06/09 \\
+            0.1     & A. Marraui, C. A. P. Freitas, C. H. Junior, G. M. Marcelino, V. B. Bianchin & First release       & 2026/06/09 \\
                     &                           &                     &            \\
                     &                           &                     &            \\
                     &                           &                     &            \\
