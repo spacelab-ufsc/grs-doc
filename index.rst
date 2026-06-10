@@ -1,11 +1,16 @@
-.. grs-doc documentation master file, created by
-   sphinx-quickstart on Wed May  7 19:50:12 2025.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. index.rst
 
-=======================
+   Copyright The Ground Station Contributors.
+
+   Ground Station Documentation
+
+   This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
+   International License. To view a copy of this license,
+   visit http://creativecommons.org/licenses/by-sa/4.0/.
+
+***********************
 SpaceLab Ground Station
-=======================
+***********************
 
 .. figure:: img/logo-wide.png
    :width: 60%

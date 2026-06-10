@@ -118,7 +118,7 @@ Vitória Beatriz Bianchin <\href{mailto:vitoria.bianchin@spacelab.ufsc.br}{vitor
 	\end{center}
 \end{figure}
 
-\textcopyright\  2026 by SpaceLab. \thetitle. This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit \href{http://creativecommons.org/licenses/by-sa/4.0/}{http://creativecommons.org/licenses/by-sa/4.0/}.
+\textcopyright\ The Ground Station Contributors. \thetitle. This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit \href{http://creativecommons.org/licenses/by-sa/4.0/}{http://creativecommons.org/licenses/by-sa/4.0/}.
 
 \cleardoublepage
     """,

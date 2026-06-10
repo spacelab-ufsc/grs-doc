@@ -1,22 +1,28 @@
-# Configuration file for the Sphinx documentation builder.
 #
-# For the full list of built-in configuration values, see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
-
-# -- Project information -----------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+# conf.py
+#
+# Copyright The Ground Station Contributors.
+#
+# Ground Station Documentation
+#
+# This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
+# International License. To view a copy of this license,
+# visit http://creativecommons.org/licenses/by-sa/4.0/.
+#
+#
 
 import sys
 import ast
 
+# Project information
 project = 'grs-doc'
-copyright = '2026, SpaceLab'
+copyright = 'The Ground Station Contributors'
 author = 'SpaceLab'
 release = 'v0.1'
+title = 'Ground Station'
+doc_id = 'slb-grs-doc'
 
-# -- General configuration ---------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
-
+# General configuration
 numfig = True
 
 extensions = ['sphinxcontrib.bibtex']
@@ -39,9 +45,7 @@ else:
 if builder in ['html', 'dirhtml']:
     exclude_patterns.append('pdf-index.rst')
 
-# -- Options for HTML output -------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
-
+# Options for HTML output
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 
@@ -53,9 +57,9 @@ html_short_title = "SpaceLab Ground Station"
 latex_documents = [
     (
         'pdf-index',                        # Root document (e.g., 'index' or 'pdf-index')
-        'slb-grs-doc-' + release + '.tex',  # Output LaTeX file name (no spaces)
-        'Ground Station',                   # Document title (can be empty to use the root doc's title)
-        'SpaceLab',                         # Author name(s).
+        doc_id + '-' + release + '.tex',    # Output LaTeX file name (no spaces)
+        title,                              # Document title (can be empty to use the root doc's title)
+        author,                             # Author name(s).
         'manual',                           # Document type: 'manual' or 'howto'
         True,                               # toctree_only: if True, only include docs in toctree
     ),
@@ -67,7 +71,6 @@ latex_toplevel_sectioning = 'chapter'
 latex_show_pagerefs = True
 latex_show_urls = 'footnote'
 
-# Replace with the path to your local override file
 latex_elements_file = "_dev/latex_elements_custom.txt"
 
 latex_elements = dict()
@@ -78,7 +81,7 @@ with open(latex_elements_file, "rt") as file:
       latex_elements = ast.literal_eval(latex_config)
 
 latex_additional_files = [
-    'spacelab_book.sty',
+    '_dev/spacelab_book.sty',
     'img/by-sa.pdf',
     'img/spacelab-logo-full-color-rgb-1000px@72ppi.png',
 ]
