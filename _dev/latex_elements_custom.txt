@@ -1,0 +1,125 @@
+{
+    'papersize': 'a4paper',
+    'pointsize': '12pt',
+    'babel': r'\usepackage[english]{babel}',
+    'fncychap': '',
+    'fontpkg': r'\usepackage[math]{iwona}',
+    'preamble': r'\usepackage{spacelab_book}',
+    'inputenc': r'\usepackage[utf8]{inputenc}',
+    'fontenc': r'\usepackage[T1]{fontenc}',
+    'geometry': r'\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}',
+    'extrapackages': r"""
+        \usepackage{titling}
+        \usepackage{fancyhdr}
+        """,
+    'hyperref': r"""
+        \usepackage[hidelinks]{hyperref}
+        \usepackage{hypcap}
+        \urlstyle{same}
+        """,
+    'sphinxsetup': 'TitleColor={rgb}{0.0,0.0,0.0}',
+    'maketitle': r"""
+\begin{titlepage}
+
+\thispagestyle{empty}
+
+\begin{flushleft}
+SLB-GRS-DOC-v0.1
+\end{flushleft}
+
+\vspace{1cm}
+
+\begin{figure}[!ht]
+    \begin{flushleft}
+        \includegraphics[width=7cm]{spacelab-logo-full-color-rgb-1000px@72ppi.png}
+    \end{flushleft}
+\end{figure}
+
+\begin{flushleft}
+\Huge{\textbf{\thetitle}}
+\rule[0pt]{\textwidth}{5pt}
+\end{flushleft}
+
+\vspace{0.2cm}
+
+\begin{flushleft}
+\textit{\thetitle} \\
+\textit{SpaceLab, Universidade Federal de Santa Catarina, Florianópolis - Brazil}
+\end{flushleft}
+
+\vfill
+\vfill
+
+\begin{flushright}
+June 2026
+\end{flushright}
+
+\end{titlepage}
+
+\cleardoublepage
+
+\thispagestyle{empty}
+
+\begin{center}
+
+\textbf{\thetitle}
+
+\textit{June, 2026}
+
+\vspace{1cm}
+
+\textbf{Project Chief:}
+
+Eduardo Augusto Bezerra <\href{mailto:Eduardo.Bezerra@ufsc.br}{Eduardo.Bezerra@ufsc.br}>
+
+\vspace{1cm}
+
+\textbf{Authors:}
+
+Arthur Marraui <\href{mailto:arthurmarraui@gmail.com}{arthurmarraui@gmail.com}> \\
+Carlos Augusto Porto Freitas <\href{mailto:carlos.freitas@spacelab.ufsc.br}{carlos.freitas@spacelab.ufsc.br}> \\
+Carlos Hayden Junior <\href{mailto:carloshaydenjunior@gmail.com}{carloshaydenjunior@gmail.com}> \\
+Gabriel Mariano Marcelino <\href{mailto:gabriel.mm8@gmail.com}{gabriel.marcelino@spacelab.ufsc.br}> \\
+Vitória Beatriz Bianchin <\href{mailto:vitoria.bianchin@spacelab.ufsc.br}{vitoria.bianchin@spacelab.ufsc.br}> \\
+
+\vspace{1cm}
+
+\textbf{Contributing Authors:}
+
+% TODO
+
+\vspace{1cm}
+
+
+\textbf{Revision Control:}
+
+\end{center}
+
+\begin{table}[!ht]
+    \begin{center}
+        \begin{tabular}{cL{5cm}L{5.5cm}C{2cm}}
+            \toprule[1.5pt]
+            \textbf{Version} & \textbf{Author}  & \textbf{Changes}    & \textbf{Date} \\
+            \midrule
+            0.1     & A. Marraui, C. A. P. Freitas, C. H. Junior, G. M. Marcelino, V. B. Bianchin & First release       & 2026/06/09 \\
+                    &                           &                     &            \\
+                    &                           &                     &            \\
+                    &                           &                     &            \\
+            \bottomrule[1.5pt]
+        \end{tabular}
+    \end{center}
+\end{table}
+
+\vfill
+
+\begin{figure}[!h]
+	\begin{center}
+		\includegraphics[width=0.25\textwidth]{by-sa.pdf}
+	\end{center}
+\end{figure}
+
+\textcopyright\ The Ground Station Contributors. \thetitle. This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit \href{http://creativecommons.org/licenses/by-sa/4.0/}{http://creativecommons.org/licenses/by-sa/4.0/}.
+
+\cleardoublepage
+    """,
+}

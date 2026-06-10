@@ -1,4 +1,4 @@
-.. references.rst
+.. pdf-index.rst
 
    Copyright The Ground Station Contributors.
 
@@ -8,11 +8,11 @@
    International License. To view a copy of this license,
    visit http://creativecommons.org/licenses/by-sa/4.0/.
 
-.. only:: html
+.. toctree::
+   :maxdepth: 3
 
-    **********
-    References
-    **********
-
-.. bibliography::
-   :style: plain
+   overview
+   hardware
+   software
+   ctrl-room
+   references

@@ -1,9 +1,22 @@
+.. software.rst
+
+   Copyright The Ground Station Contributors.
+
+   Ground Station Documentation
+
+   This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
+   International License. To view a copy of this license,
+   visit http://creativecommons.org/licenses/by-sa/4.0/.
+
 ********
 Software
 ********
 
 Software Architecture
 =====================
+
+The software architecture presented in the diagram of :numref:`fig:software-diagram` was designed for a modular and distributed ground station intended for satellite communication, tracking, and control operations. The architecture is organized into three main segments: *Station Server, Control Server, and Control Desktop*,enabling a clear separation between RF signal processing, communication protocol handling, and operator interfaces. This organization improves scalability, simplifies maintenance, and allows computational workloads to be distributed across multiple machines within the ground station infrastructure.
+
 .. _fig:software-diagram:
 
 .. figure:: img/block-diagram-software.png
@@ -11,6 +24,18 @@ Software Architecture
    :align: center
 
    Ground station software diagram.
+
+The Station Server is responsible for RF processing and for interfacing directly with the hardware components of the ground station. This module communicates with SDR receivers, power amplifiers, LNAs, RF switches, temperature sensors, and the antenna rotor controller. The software running on this server performs IQ sample acquisition from the SDRs, automatic frequency tuning through the Frequency Synthesizer, spectral analysis using FFT processing, and signal demodulation. After bit recovery, the Sync Word Detectors identify valid communication frames and forward raw packets to the upper layers of the system. In the transmission path, the server receives telecommand packets, performs signal modulation, and sends IQ samples to the SDR transmitters. The server also includes dedicated modules for antenna rotor management and RF front-end control, enabling full automation of the physical station infrastructure.
+
+The Control Server acts as the logical core of the system and is responsible for coordinating communications between stations, processing satellite communication protocols, and managing overall ground station operations. Packets received from the Station Server are first processed by the Data Link Layer Decoders and subsequently by the Network Layer Decoders. After reconstructing the payload data, the Satellite Data Decoders interpret telemetry, housekeeping information, and payload data from the satellites. The decoded information is then stored in a database for visualization, monitoring, and historical analysis. This server also executes centralized station management through the Station Manager module, which coordinates distributed services, synchronizes operational states, and handles control messaging among the system components.
+
+In addition to telemetry processing, the Control Server is also responsible for telecommand generation and scheduling. The Satellite Telecommand (TC) Scheduler organizes command transmissions according to communication windows, operational priorities, and mission constraints. After scheduling, the commands are encapsulated by the Network Layer Encoder and Data Link Layer Encoder modules before being forwarded to the Station Server for modulation and RF transmission toward the satellite.
+
+Communication between the different software modules is implemented using multiple specialized protocols. Low-level hardware interfaces rely on TCP/IP and UDP communication, while internal distributed messaging between software components is performed using the ZeroMQ middleware. The Pub/Sub communication model is used for continuous streaming of telemetry, spectrum data, and operational status information, whereas the Req/Rep model is employed for synchronous command and control operations. This approach decouples the software modules and allows new services and functionalities to be integrated into the system without requiring major architectural modifications.
+
+The Control Desktop represents the human-machine interface layer of the architecture. This environment contains the graphical applications used by the operators during satellite operations, including the Dashboard, Satellite Tracker, GRS Manager, Spectrum Monitor, and Satellite TC Generator. These applications can be distributed across multiple displays and workstations, enabling flexible and distributed operation of the ground station during simultaneous satellite communication sessions.
+
+The proposed architecture follows a modular microservice-oriented approach based on distributed processing principles. The separation between RF processing, protocol handling, and graphical interfaces minimizes coupling between subsystems and improves maintainability, scalability, and fault isolation. Furthermore, the use of SDR technology and standardized communication interfaces makes the system adaptable to different satellite missions, communication protocols, and frequency bands, allowing its use in CubeSat constellations, scientific satellites, and Earth observation missions.
 
 Station Server
 --------------

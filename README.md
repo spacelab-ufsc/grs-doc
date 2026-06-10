@@ -51,6 +51,14 @@ After installing the required dependencies, just execute the following command:
 make html
 ```
 
+### Generating a PDF
+
+To generate the documentation in PDF format, execute the following command:
+
+```
+make latexpdf
+```
+
 ## License
 
 This documentation is licensed under  Creative Commons BY-SA 4.0 license.
