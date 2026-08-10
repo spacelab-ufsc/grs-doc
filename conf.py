@@ -15,12 +15,12 @@ import sys
 import ast
 
 # Project information
-project = 'grs-doc'
-copyright = 'The Ground Station Contributors'
-author = 'SpaceLab'
-release = 'v0.1'
-title = 'Ground Station'
-doc_id = 'slb-grs-doc'
+project     = 'grs-doc'
+copyright   = 'The Ground Station Contributors'
+author      = 'SpaceLab'
+release     = 'v0.1'
+title       = 'Ground Station'
+doc_id      = 'slb-grs-doc'
 
 # General configuration
 numfig = True
@@ -52,6 +52,10 @@ html_static_path = ['_static']
 # Navigation bar title
 html_title = "SpaceLab Ground Station"
 html_short_title = "SpaceLab Ground Station"
+html_logo = "_static/logo-wide.png"
+html_theme_options = {
+    'logo_only': True,
+}
 
 # PDF output configuration
 latex_documents = [
